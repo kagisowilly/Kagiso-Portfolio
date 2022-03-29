@@ -68,5 +68,7 @@ export default {
   flex-shrink: 0;
   width: 25px;
   margin-right: 10px;
+  font-size: 30px;
+  
 }
 </style>
