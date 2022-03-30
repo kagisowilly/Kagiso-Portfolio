@@ -37,17 +37,23 @@ export default {
     <SidebarLink class="sidebarlink" to="/" icon="fas fa-home">
       Home
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/dashboard" icon="fas fa-columns">
-      Dashboard
+    <SidebarLink class="sidebarlink" to="/about" icon="fas fa-address-card">
+      About
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/analytics" icon="fas fa-chart-bar">
-      Analytics
+    <SidebarLink class="sidebarlink" to="/analytics" icon="fas fa-list">
+      Resume
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/friends" icon="fas fa-users">
-      Friends
+    <SidebarLink class="sidebarlink" to="/friends" icon="fas fa-pen">
+      Skills
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/image" icon="fas fa-image">
-      Images
+    <SidebarLink class="sidebarlink" to="/image" icon="fas fa-suitcase">
+      Projects
+    </SidebarLink>
+        <SidebarLink class="sidebarlink" to="/image" icon="fas fa-users">
+      Testimonials
+    </SidebarLink>
+        <SidebarLink class="sidebarlink" to="/image" icon="fas fa-comments">
+      Contact
     </SidebarLink>
 
     <span
