@@ -1,15 +1,15 @@
 <template>
   <section
-
-  
     class="about-section"
     id="about"
   >
 
+<div>     <h1 class="text-center display-6 subtitlee green fw-bold mb-5"><u>About</u></h1></div>
     <div class="container pb-3" >
-      <h1 class="text-center display-6 subtitlee fw-bold mb-5"><u>About</u></h1>
-                <div class="text-center "><h3  class="text-white intro">Introduction</h3></div>
-      <div class="row justify-content-center text-white">
+ 
+      
+                <div class="text-center "><h3  class="text-black mb-4 intro">Introduction</h3></div>
+      <div class="row justify-content-center text-black">
         <div class="col col-lg-10 abountcont col-md-10">
           <p>
             I am a hard-working individual who never shies away from a
@@ -30,7 +30,7 @@
 
       <div class="row justify-content-center pt-3">
         <div class="col-lg-6 col-md-5">
-          <table class="table  text-white table-bordered">
+          <table class="table text-start  text-black table-bordered">
             <thead>
               <tr>
                 <th scope="col">Personal Details</th>
@@ -38,7 +38,7 @@
             </thead>
             <tbody>
               <tr>
-                <td><b class="text-muted">Full name:</b> Kagiso Mphayi</td>
+                <td><b class="text-muted">Full name:</b><span class="green">Kagiso Mphayi</span> </td>
               </tr>
               <tr>
                 <td><b class="text-muted">Date of birth:</b> 1996/07/01</td>
@@ -53,7 +53,7 @@
           </table>
         </div>
                 <div class="col-lg-6 col-md-5">
-          <table class="table  text-white table-bordered">
+          <table class="table text-start text-black table-bordered">
             <thead>
               <tr>
                 <th scope="col">Languages</th>
@@ -76,9 +76,9 @@
           </table>
         </div>
         <div class="col col-lg-6 col-md-5">
-          <table class="table  text-white table-bordered">
+          <table class="table text-start text-black table-bordered">
             <thead>
-              <tr class="text-white">
+              <tr class="text-black">
                 <th scope="col text-muted">Passion Board</th>
               </tr>
             </thead>
@@ -100,7 +100,7 @@
         </div>
 
         <div class="col col-lg-6 col-md-10">
-          <table class="table  text-white table-bordered">
+          <table class="table text-start text-black table-bordered">
             <thead>
               <tr>
                 <th scope="col">Soft Skills</th>
@@ -136,14 +136,19 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+.table>:not(:first-child) {
+    border-top: 1px solid rgba(115, 179, 106, 0.966);
+}
+.green{
+  color: rgba(115, 179, 106, 0.966);
+}
 
-table.table-bordered > thead > tr > th{
-    border:1px solid rgb(116, 116, 116);
-}
-table.table-bordered > tbody > tr > td{
-    border:1px solid rgb(116, 116, 116);
-}
 
 td,tr{
   font-size: large;
@@ -155,15 +160,18 @@ th{
       text-align: center;
     }
 
+/* SLIDE */
  section{
   animation-duration: 1s;
   animation-name: slidein;
 }
-
+template{
+  background-color: #f2f2fc;
+}
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%;
+    width: 100%;
   }
 
   to {

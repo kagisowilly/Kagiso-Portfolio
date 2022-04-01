@@ -40,10 +40,10 @@ export default {
     <SidebarLink class="sidebarlink" to="/about" icon="fas fa-address-card">
       About
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/analytics" icon="fas fa-list">
+    <SidebarLink class="sidebarlink" to="/resume" icon="fas fa-list">
       Resume
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/friends" icon="fas fa-pen">
+    <SidebarLink class="sidebarlink" to="/skills" icon="fas fa-pen">
       Skills
     </SidebarLink>
     <SidebarLink class="sidebarlink" to="/image" icon="fas fa-suitcase">
@@ -123,6 +123,7 @@ export default {
   border-radius: 20px;
   float: left;
   border: white !important;
+  object-fit: cover;
 }
 .profile1 {
   height: auto;
