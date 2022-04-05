@@ -1,4 +1,4 @@
-# vue3-sidebar
+# Kagiso-portfolio
 
 ## Project setup
 ```
