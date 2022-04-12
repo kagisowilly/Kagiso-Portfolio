@@ -4,7 +4,7 @@
     <!-- Landing-->
     <div class="container one">
       <div class="row home-content" >
-        <div class="col-">
+        <div class="col- text-center">
           <h1 style="color: rgba(115, 179, 106, 0.966)" class="display-1 main-title fw-bold">
             Kagiso Mphayi
           </h1>

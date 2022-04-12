@@ -46,13 +46,13 @@ export default {
     <SidebarLink class="sidebarlink" to="/skills" icon="fas fa-pen">
       Skills
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/image" icon="fas fa-suitcase">
+    <SidebarLink class="sidebarlink" to="/projects" icon="fas fa-suitcase">
       Projects
     </SidebarLink>
-        <SidebarLink class="sidebarlink" to="/image" icon="fas fa-users">
+        <SidebarLink class="sidebarlink" to="/testimonials" icon="fas fa-users">
       Testimonials
     </SidebarLink>
-        <SidebarLink class="sidebarlink" to="/image" icon="fas fa-comments">
+        <SidebarLink class="sidebarlink" to="/contact" icon="fas fa-comments">
       Contact
     </SidebarLink>
 
@@ -63,10 +63,34 @@ export default {
     >
       <i class="fas fa-angle-double-left" />
     </span>
+    <span v-if="collapsed">
+        <div class="footer-copyright copy1 text-center mb-0 py-1 text-white">
+          ©2022:KM
+        </div>      
+    </span>
+    <span v-else>
+        <div class="footer-copyright copy2 text-center mb-0 py-1 text-white">
+          ©2022 Copyright: Kagiso Mphayi
+        </div>         
+    </span>
+
   </div>
 </template>
 
 <style>
+.copy1{
+position: absolute !important;
+bottom:50px !important;
+}
+.copy2{
+position: absolute !important;
+bottom:50px !important;
+}
+.footer-copyright{
+  position: absolute;
+  bottom: 10;
+  font-size: 10px;
+}
 :root {
   --sidebar-bg-color: #2c5d45;
   --sidebar-item-hover: #2c5d45;
@@ -98,7 +122,7 @@ export default {
 }
 
 .sidebarlink {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .collapse-icon {
   position: absolute;
@@ -116,6 +140,7 @@ export default {
 }
 .collapse-icon {
   font-size: 30px;
+      padding: 0px;
 }
 .profile2 {
   height: 250px;

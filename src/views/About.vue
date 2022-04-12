@@ -99,7 +99,7 @@
           </table>
         </div>
 
-        <div class="col col-lg-6 col-md-10">
+        <div class="col col-lg-6 col-md-5">
           <table class="table text-start text-black table-bordered">
             <thead>
               <tr>

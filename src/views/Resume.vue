@@ -5,13 +5,14 @@
     class="education-work"
     id="education"
   >
-    <div class="container mb-5">
-      <div class="row  justify-content-center" v-if="resumes">
-        <div class="col-lg-10 text-black">
-          <h1 class="text-center display-6 green fw-bold subtitlee mb-5">
+            <h1 class="text-center display-6 green fw-bold subtitlee mb-5">
             <u>Resume</u>
           </h1>
           <h3 class="text-center pt-5">Education & Experience</h3>
+    <div class="container mb-5">
+      <div class="row  justify-content-center" v-if="resumes">
+        <div class="col-lg-10 text-black">
+
           <ul class="timeline">
             <li class="slide" v-for="resume of resumes" :key="resume.title">
               <div class="resu shadow">
@@ -62,7 +63,7 @@ export default {
     
 </script>
 
-<style>
+<style scoped>
 /* LOADER */
 .loader {
     z-index: 1000;
@@ -86,7 +87,7 @@ export default {
   100% { transform: rotate(360deg); }
 }
 .loaderr{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
 }
