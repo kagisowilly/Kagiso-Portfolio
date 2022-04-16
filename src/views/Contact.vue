@@ -1,5 +1,8 @@
 <template>
   <section class="contact-background" id="contact">
+    <h2 class="text-center green display-6 fw-bold mb-3 subtitlee">
+      <u>Contact Me</u>
+    </h2>  
     <div class="cont">
       <div class="formm container justify-content-center">
         <div class="row">
@@ -21,7 +24,6 @@
 
           <div class=" form-cont  col-md-6 col-sm-12 col- col-lg-8 col-12">
             <form @submit.prevent="handleSubmit" class="contactMe card-shadow slider container">
-              <div class="text-center"><h5 class="p-2">Contact us</h5></div>
               <div id="emailHelp" class="form-text text-center">
                 <p>
                   Let's get in touch.
