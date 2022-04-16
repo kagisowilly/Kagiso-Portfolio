@@ -57,11 +57,11 @@ export default {
     </SidebarLink>
 
     <span
-      class="collapse-icon"
+      class="collapse-icon "
       :class="{ 'rotate-180': collapsed }"
       @click="toggleSidebar"
     >
-      <i class="fas fa-angle-double-left" />
+      <i class="fas  fa-angle-double-left" />
     </span>
     <span v-if="collapsed">
         <div class="footer-copyright copy1 text-center mb-0 py-1 text-white">

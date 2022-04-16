@@ -5,9 +5,12 @@
     <div class="container one">
       <div class="row home-content" >
         <div class="col- text-center">
+          <div class="">
           <h1 style="color: rgba(115, 179, 106, 0.966)" class="display-1 main-title fw-bold">
             Kagiso Mphayi
-          </h1>
+          </h1>            
+          </div>
+
           <div class="col-lg-6 mx-auto">
             <div class="lead text-white">
               <p class="mt-3 text-white">
@@ -54,6 +57,9 @@ export default {
 </script>
 
 <style scoped>
+/* TITLE ANIMATION */
+
+/* END OF ANIMATION */
     .icons {
       font-size: 30px;
     }

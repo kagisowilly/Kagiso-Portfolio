@@ -1,14 +1,14 @@
 <template>
-  <section
-    class="about-section"
-    id="about"
-  >
-
-<div>     <h1 class="text-center display-6 subtitlee green fw-bold mb-5"><u>About</u></h1></div>
-    <div class="container pb-3" >
- 
-      
-                <div class="text-center "><h3  class="text-black mb-4 intro">Introduction</h3></div>
+  <section class="about-section" id="about">
+    <div>
+      <h1 class="text-center display-6 subtitlee green fw-bold mb-5">
+        <u>About</u>
+      </h1>
+    </div>
+    <div class="container pb-3">
+      <div class="text-center">
+        <h3 class="text-black bolder mb-4 intro">Introduction</h3>
+      </div>
       <div class="row justify-content-center text-black">
         <div class="col col-lg-10 abountcont col-md-10">
           <p>
@@ -29,57 +29,47 @@
       </div>
 
       <div class="row justify-content-center pt-3">
-        <div class="col-lg-6 col-md-5">
-          <table class="table text-start  text-black table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Personal Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><b class="text-muted">Full name:</b><span class="green">Kagiso Mphayi</span> </td>
-              </tr>
-              <tr>
-                <td><b class="text-muted">Date of birth:</b> 1996/07/01</td>
-              </tr>
-              <tr>
-                <td><b class="text-muted">Location:</b> Cape Town,South Africa</td>
-              </tr>
-              <tr>
-                <td><b class="text-muted">Cell Phone number:</b> 079 928 2407</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-                <div class="col-lg-6 col-md-5">
+        <div class="col- col-lg-6 col-md-5">
           <table class="table text-start text-black table-bordered">
             <thead>
               <tr>
-                <th scope="col">Languages</th>
+                <th scope="col-">Personal Details</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>English</td>
+                <td>
+                  <b class="text-muted">Full name:</b>
+                  <span class="green">Kagiso Mphayi</span>
+                </td>
               </tr>
               <tr>
-                <td>Setswana</td>
+                <td>
+                  <b class="text-muted">Date of birth:</b>
+                  1996/07/01
+                </td>
               </tr>
               <tr>
-                <td>Sesotho</td>
+                <td>
+                  <b class="text-muted">Location:</b>
+                  Cape Town,South Africa
+                </td>
               </tr>
               <tr>
-                <td>Isizulu</td>
+                <td>
+                  <b class="text-muted">Cell Phone number:</b>
+                  079 928 2407
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="col col-lg-6 col-md-5">
+
+        <div class="col- col-lg-6 col-md-5">
           <table class="table text-start text-black table-bordered">
             <thead>
               <tr class="text-black">
-                <th scope="col text-muted">Passion Board</th>
+                <th scope="col- text-muted">Passion Board</th>
               </tr>
             </thead>
             <tbody>
@@ -99,11 +89,11 @@
           </table>
         </div>
 
-        <div class="col col-lg-6 col-md-5">
+        <div class="col- col-lg-6 col-md-5">
           <table class="table text-start text-black table-bordered">
             <thead>
               <tr>
-                <th scope="col">Soft Skills</th>
+                <th scope="col-">Soft Skills</th>
               </tr>
             </thead>
             <tbody>
@@ -122,50 +112,114 @@
             </tbody>
           </table>
         </div>
-
+        <div class="col- col-lg-6 col-md-5">
+          <div class="hr">
+            <hr />
+          </div>
+          <div class="submit">
+            <a
+              target="_blank"
+              download
+              href="https://drive.google.com/file/d/1aSv-Dk5IbK6hST_61KchliLa1LetfWdS/view?usp=drivesdk"
+              class="text-white"
+            >
+              <button type="Submit" class="mb-3 btn button-body">
+                <h5 id="sub" class="text-black mb-0">
+                  Download CV
+                  <i class="bi mx-1 bi-download"></i>
+                </h5>
+              </button>
+            </a>
+            <a href="">
+              <router-link to="/projects">
+                <button type="Submit" class="mb-3 buttt btn button-body">
+                  <h5 id="sub" class="text-black mb-0">
+                    My Work
+                    <i class="bi mx-1 bi-briefcase"></i>
+                  </h5>
+                </button>
+              </router-link>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-            <div class="container hr">
-            <hr class=" bg-white">
-        </div>
+    <div class="container hr">
+      <hr class="bg-white" />
+    </div>
   </section>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style scoped>
-tbody, td, tfoot, th, thead, tr {
-    border-color: inherit;
-    border-style: solid;
-    border-width: 0;
+.submit {
 }
-.table>:not(:first-child) {
-    border-top: 1px solid rgba(115, 179, 106, 0.966);
+hr {
+  color: rgba(115, 179, 106, 0.966);
+  height: 2px;
+  margin-bottom: 0;
+  margin-top: 50px;
 }
-.green{
+/* BUTTON */
+.button-body {
+  background: rgba(115, 179, 106, 0.966);
+  border: 0;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+  background: rgba(10, 81, 139, 0.979);
+}
+#sub:hover {
+  color: rgb(255, 255, 255) !important;
+}
+#sub {
+  color: white;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+.table > :not(:first-child) {
+  border-top: 1px solid rgba(115, 179, 106, 0.966);
+}
+.green {
   color: rgba(115, 179, 106, 0.966);
 }
 
-
-td,tr{
+td,
+tr {
   font-size: large;
 }
-th{
+th {
   font-size: larger;
 }
-    .abountcont {
-      text-align: center;
-    }
-
+.abountcont {
+  text-align: center;
+}
+.buttt{
+  margin-left: 10px;
+}
 /* SLIDE */
- section{
+section {
   animation-duration: 1s;
   animation-name: slidein;
 }
-template{
+template {
   background-color: #f2f2fc;
 }
 @keyframes slidein {
@@ -179,6 +233,19 @@ template{
     width: 100%;
   }
 }
-
+@media all and (max-width: 991px) {
+.buttt{
+  margin-left: 0;
+}
+}
+@media all and (max-width: 767px) {
+.buttt{
+  margin-left: 10px !important;
+}
+}
+@media all and (max-width: 461px) {
+.buttt{
+  margin-left: 1px !important;
+}
+}
 </style>
-

@@ -7,8 +7,7 @@
         <div class="bar d-flex">
           <div class="rating slide text-center" style="height: 24px; width: 80%">
            <p>70-90%</p> 
-          </div>
-          
+          </div>         
         </div>
         <br />
       <label class="text-black">CSS</label>
@@ -71,6 +70,9 @@ export default {}
 </script>
 
 <style scoped>
+.subtitlee{
+   color: rgba(115, 179, 106, 0.966);
+}
 #skills{
   height: 92vh;
   display: flex;
@@ -81,11 +83,6 @@ p{
   position:absolute;
   left:50%;
 }
-/* .skills-content{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-} */
 .rating {
   background-color: rgba(115, 179, 106, 0.966);
 }
@@ -94,7 +91,7 @@ p{
 }
 /* SLIDE */
 .slide {
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-name: slidein;
 }
 template {
@@ -105,7 +102,6 @@ template {
     margin-left: 0%;
     width: 0%;
   }
-
   to {
     margin-right: 0%;
     max-width: 100%;
