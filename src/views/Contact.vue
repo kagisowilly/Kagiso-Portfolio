@@ -1,8 +1,5 @@
 <template>
   <section class="contact-background" id="contact">
-    <h2 class="text-center green display-6 fw-bold mb-3 subtitlee">
-      <u>Contact Me</u>
-    </h2>
     <div class="cont">
       <div class="formm container justify-content-center">
         <div class="row">
