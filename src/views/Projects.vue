@@ -12,20 +12,24 @@
 
         <div  class="slide">
           <div class="row col-lg-12 proji" style="row-gap: 30px">
-            <div
-              v-for="project of projects"
-              :key="project.title"
-              class="col-lg-3 col-md-6"
-              style="display: flex; justify-content: center"
-            >
-              <div class="card ani-card card-shadow" style="width: 18rem">
-                <img :src="project.img" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-title text-black">{{ project.title }}</h4>
-                  <p class="card-text text-black">{{ project.description }}</p>
+    <div class="col-lg-3 col-md-6 col-sm-12" v-for="project of projects" :key="project.title">
+      <!-- item -->
+                
+              <div class = "menu-item">
+          <div class="image-div">
+            <img class="imaage" :src ="project.img" alt = "food image">
+          </div>
+            
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>{{project.title}}</h2>
+                  
+            
                 </div>
-
-                <div class="card-body card-icons">
+                <h5>{{project.description}}</h5>
+                  
+              <div class="card-icons">     
                   <a target="_blank" :href="project.netlify" class="card-link">
                     <button class="mt-0 rounded">
                       <img
@@ -44,9 +48,14 @@
                       />
                     </button>
                   </a>
-                </div>
+              </div>
+           
+
               </div>
             </div>
+          <!-- </a> -->
+        </div>
+    </div>
           </div>
         </div>
 
@@ -114,7 +123,7 @@ export default {
 }
 /* LOADER END */
 .icon {
-  width: 40px;
+  width: 30px;
 }
 /* SLIDE */
 .slide {
@@ -157,9 +166,9 @@ button {
 }
 
 .icon:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
 }
 .card {
   width: 50%;
@@ -173,5 +182,92 @@ button {
 .card-img-top {
   height: 150px;
   width: 100%;
+}
+
+/* SEKO CSS */
+ .image-div{
+   width:100%;
+ }
+.imaage{
+  height: 310px;
+  object-fit: cover;
+  overflow:hidden;
+  width:100%;
+}
+.first-menu {
+  display: flex;
+  gap: 10px;
+  margin: 5px;
+}
+.second-menu {
+  display: flex;
+  margin: 5px;
+  gap: 10px;
+}
+.title{
+    padding: 0.2rem;
+}
+.menu-wrapper{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.menu-item{
+    position: relative;
+    cursor: pointer;
+}
+.menu-overlay{
+    height: 130px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: var(--transition);
+    overflow: hidden;
+}
+.menu-overlay-content{
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform: translateY(100%);
+    text-size-adjust: 40px;
+}
+.menu-overlay-content div{
+    display: flex;
+    justify-content: space-between;
+}
+.edit-btn{
+   display: inline-block;
+   justify-content: space-around;
+}
+.menu-overlay-content h2{
+    text-transform: capitalize;
+    margin-bottom: 0;
+    font-size: medium;
+    margin-bottom: -6px;
+}
+.menu-overlay-content h5{
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    font-size: x-small;
+    margin-bottom: 0px;
+}
+.menu-item:hover .menu-overlay{
+    opacity: 1;
+}
+.menu-item:hover .menu-overlay-content{
+    transform: translateY(0);
+}
+.border{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  border-bottom: 4px solid var(--grey);
+  
 }
 </style>
