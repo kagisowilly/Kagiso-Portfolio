@@ -12,10 +12,10 @@
 
         <div  class="slide">
           <div class="row col-lg-12 proji" style="row-gap: 30px">
-    <div class="col-lg-3 col-md-6 col-sm-12" v-for="project of projects" :key="project.title">
+    <div class="col-lg-3 col-md-6   col-sm-12" v-for="project of projects" :key="project.title">
       <!-- item -->
                 
-              <div class = "menu-item">
+              <div class = "card-shadow menu-item">
           <div class="image-div">
             <img class="imaage" :src ="project.img" alt = "food image">
           </div>

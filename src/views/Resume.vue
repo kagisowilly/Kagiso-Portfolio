@@ -15,7 +15,7 @@
 
           <ul class="timeline">
             <li class="slide" v-for="resume of resumes" :key="resume.title">
-              <div class="resu shadow">
+              <div class="resu box-shadow">
                 <div class="p-2">
                   <h3 class="green">
                     <i class="bi bi-briefcase-fill"></i> {{resume.title}}
@@ -112,6 +112,12 @@ template{
   }
 }
 /* SLIDE END */
+.box-shadow{
+    box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
+  -webkit-box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
+  -moz-box-shadow: -11px 11px 13px -8px rgba(95, 225, 124, 0.75);
+  border: none;
+}
 .green{
   color: rgba(115, 179, 106, 0.966);
 }
