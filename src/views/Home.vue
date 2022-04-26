@@ -87,6 +87,7 @@ justify-content: center;
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5); 
+  color:rgba(115, 179, 106, 0.966) !important;
 }
    .num-one {
     height: 100vh;

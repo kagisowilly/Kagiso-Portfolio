@@ -1,9 +1,10 @@
 <template>
-  <section class="contact-background" id="contact">
+  <section class=" contact-background" id="contact">
     <h2 class="text-center green display-6 fw-bold mb-3 subtitlee">
       <u>Contact Me</u>
     </h2>
-    <div class="cont">
+    <p class="text-center">Let's get in touch.</p>
+    <div class="cont slide">
       <div class="formm container justify-content-center">
         <div class="row">
           <div class="col-md-6 sliderrr col-sm-12 col- col-lg-4 col-12">
@@ -24,13 +25,7 @@
 
           <div class=" form-cont  col-md-6 col-sm-12 col- col-lg-8 col-12">
             <form @submit.prevent="handleSubmit" class="contactMe card-shadow slider container">
-              <div class="text-center"><h5 class="p-2">Contact us</h5></div>
               <div id="emailHelp" class="form-text text-center">
-                <p>
-                  Let's get in touch.
-                  <br />
-                  I will never share your information with anyone.
-                </p>
               </div>
               <label class="text-black">Name:</label>
               <input
@@ -135,14 +130,14 @@ form {
 label {
   color: rgb(0, 0, 0);
   display: inline-block;
-  margin: 25px 0 15px;
+  margin: 12px 0 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
 }
 input {
   display: block;
-  padding: 10px 6px;
+  padding: 5px 3px;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #ddd;
@@ -157,7 +152,7 @@ input {
   color: rgb(255, 255, 255);
   border-radius: 10px;
   cursor: pointer;
-  margin-bottom: 50px !important;
+  margin-bottom: 10px !important;
 }
 button:hover {
   opacity: 0.8;
@@ -187,7 +182,6 @@ button:hover {
 }
 .formm {
   width: 100%;
-  height: 100vh;
   padding-top: 70px;
 }
 .cont {
@@ -196,8 +190,8 @@ button:hover {
   justify-content: center !important;
   padding-bottom: 40px;
 }
-/* SLIDE LEFT */
-.slider {
+/* SLIDE */
+.slide {
   animation-duration: 1s;
   animation-name: slidein;
 }
@@ -211,30 +205,8 @@ template {
   }
 
   to {
-    margin-left: 50%;
+    margin-left: 0%;
     width: 100%;
-  }
-}
-
-/* SLIDE END */
-
-/* SLIDE RIGHT */
-.sliderrr {
-  animation-duration: 1s;
-  animation-name: slideiner;
-}
-template {
-  background-color: #f2f2fc;
-}
-@keyframes slideiner {
-  from {
-    margin-left: -50%;
-    width: 100%;
-  }
-
-  to {
-    margin-right: 0%;
-    width: 0%;
   }
 }
 
@@ -243,5 +215,8 @@ template {
   .formm {
     width: 100%;
   }
+}
+@media all and (max-width: 800px) {
+
 }
 </style>
