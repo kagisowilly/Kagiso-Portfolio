@@ -157,4 +157,18 @@ bottom:50px !important;
   float: left;
   border: white !important;
 }
+.sidebarlink:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+  color:rgba(115, 179, 106, 0.966) !important;
+  width: 70%;
+}
+.fa-angle-double-left:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+  color:rgba(115, 179, 106, 0.966) !important;
+  width: 70%;
+}
 </style>

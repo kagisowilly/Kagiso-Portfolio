@@ -124,19 +124,19 @@
               class="text-white"
             >
               <button type="Submit" class="mb-3 btn button-body">
-                <h5 id="sub" class="text-black mb-0">
+                
                   Download CV
                   <i class="bi mx-1 bi-download"></i>
-                </h5>
+               
               </button>
             </a>
             <a href="">
               <router-link to="/projects">
                 <button type="Submit" class="mb-3 buttt btn button-body">
-                  <h5 id="sub" class="text-black mb-0">
+                  
                     My Work
                     <i class="bi mx-1 bi-briefcase"></i>
-                  </h5>
+                  
                 </button>
               </router-link>
             </a>
@@ -156,8 +156,7 @@ export default {}
 </script>
 
 <style scoped>
-.submit {
-}
+
 hr {
   color: rgba(115, 179, 106, 0.966);
   height: 2px;
@@ -170,17 +169,16 @@ hr {
   border: 0;
   padding: 10px 20px;
   margin-top: 10px;
-  color: rgb(255, 255, 255);
+  color: black;
   border-radius: 10px;
   cursor: pointer;
 }
 button:hover {
   opacity: 0.8;
-  background: rgba(10, 81, 139, 0.979);
-}
-#sub:hover {
+  background: #12613b;
   color: rgb(255, 255, 255) !important;
 }
+
 #sub {
   color: white;
 }

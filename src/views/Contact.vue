@@ -59,7 +59,7 @@
 
               <div class="submit mb-3">
                 <button type="Submit" class="mb-3 btn button-body">
-                  <h5 id="sub" class="text-black mb-0">Submit</h5>
+                  Submit
                 </button>
               </div>
             </form>
@@ -149,24 +149,20 @@ input {
   border: 0;
   padding: 10px 20px;
   margin-top: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px !important;
 }
 button:hover {
   opacity: 0.8;
-  background: rgba(10, 81, 139, 0.979);
+  background: #12613b;
+  color: rgb(255, 255, 255) !important;
 }
 .submit {
   text-align: center;
 }
-#sub:hover {
-  color: rgb(255, 255, 255) !important;
-}
-#sub {
-  color: white;
-}
+
 .error {
   color: #ff0062;
   margin-top: 10px;
@@ -216,7 +212,10 @@ template {
     width: 100%;
   }
 }
-@media all and (max-width: 800px) {
-
+@media all and (max-width: 768px) {
+  .formm {
+    width: 100%;
+    padding-top: 30px;
+  }
 }
 </style>
