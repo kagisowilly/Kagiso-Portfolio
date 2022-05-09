@@ -14,7 +14,7 @@
           <div class="col-lg-6 mx-auto">
             <div class="lead text-white">
               <p class="mt-3 text-white">
-                <span>| Junior Front-end Developer|</span>
+                <span>| Junior Full Stack Developer|</span>
                 <span> Designer |</span>
                 <span> Photographer |</span>
               </p>

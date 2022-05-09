@@ -8,6 +8,7 @@ export default {
   setup() {
     return { collapsed, toggleSidebar, sidebarWidth }
   }
+  
 }
 </script>
 
@@ -78,6 +79,10 @@ export default {
 </template>
 
 <style>
+.sidebarlink.active {
+  color: rgba(115, 179, 106, 0.966);
+  font-weight: 600;
+}
 .copy1{
 position: absolute !important;
 bottom:50px !important;
@@ -92,9 +97,9 @@ bottom:50px !important;
   font-size: 10px;
 }
 :root {
-  --sidebar-bg-color: #2c5d45;
-  --sidebar-item-hover: #2c5d45;
-  --sidebar-item-active: #2c5d45;
+  --sidebar-bg-color: #1d4632;
+  --sidebar-item-hover: #1d4632;
+  --sidebar-item-active: #1d4632;
 }
 </style>
 
