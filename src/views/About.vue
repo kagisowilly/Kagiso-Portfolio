@@ -1,5 +1,6 @@
 <template>
   <section class="about-section" id="about">
+    <div class="sec">
     <div>
       <h1 class="text-center display-6 subtitlee green fw-bold mb-5">
         <u>About</u>
@@ -10,7 +11,15 @@
         <h3 class="text-black bolder mb-4 intro">Introduction</h3>
       </div>
       <div class="row justify-content-center text-black">
-        <div class="col col-lg-10 abountcont col-md-10">
+        <div
+          class="
+            col col-lg-10
+            text-md-start text-lg-center
+            text-start
+            abountcont
+            col-md-10
+          "
+        >
           <p>
             I am a hard-working individual who never shies away from a
             challenge. I am always willing to help the person next to me.
@@ -124,19 +133,15 @@
               class="text-white"
             >
               <button type="Submit" class="mb-3 btn button-body">
-                
-                  Download CV
-                  <i class="bi mx-1 bi-download"></i>
-               
+               <span class="download">Download</span>  CV
+                <i class="bi bi-download"></i>
               </button>
             </a>
             <a href="">
               <router-link to="/projects">
                 <button type="Submit" class="mb-3 buttt btn button-body">
-                  
-                    My Work
-                    <i class="bi mx-1 bi-briefcase"></i>
-                  
+                  My Work
+                  <i class="bi mx-1 bi-briefcase"></i>
                 </button>
               </router-link>
             </a>
@@ -147,7 +152,9 @@
 
     <div class="container hr">
       <hr class="bg-white" />
+    </div>      
     </div>
+
   </section>
 </template>
 
@@ -157,6 +164,10 @@ export default {}
 
 <style scoped>
 
+.submit{
+  display: flex;
+  gap: 5px;
+}
 hr {
   color: rgba(115, 179, 106, 0.966);
   height: 2px;
@@ -167,7 +178,6 @@ hr {
 .button-body {
   background: rgba(115, 179, 106, 0.966);
   border: 0;
-  padding: 10px 20px;
   margin-top: 10px;
   color: black;
   border-radius: 10px;
@@ -191,6 +201,7 @@ tr {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+
 }
 .table > :not(:first-child) {
   border-top: 1px solid rgba(115, 179, 106, 0.966);
@@ -209,14 +220,15 @@ th {
 .abountcont {
   text-align: center;
 }
-.buttt{
+.buttt {
   margin-left: 10px;
 }
 /* SLIDE */
-section {
+.sec {
   animation-duration: 1s;
   animation-name: slidein;
 }
+
 template {
   background-color: #f2f2fc;
 }
@@ -232,18 +244,68 @@ template {
   }
 }
 @media all and (max-width: 991px) {
-.buttt{
-  margin-left: 0;
+  .buttt {
+    margin-left: 0;
+  }
+  .button-body {
+  background: rgba(115, 179, 106, 0.966);
+  border: 0;
+  margin-top: 10px;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  
 }
 }
 @media all and (max-width: 767px) {
-.buttt{
-  margin-left: 10px !important;
+  hr {
+  margin-top: 15px;
+}
+  .buttt {
+    margin-left: 10px !important;
+  }
+  tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  padding: 5px;
+}
+}
+@media all and (max-width: 576px) {
+  td,
+tr {
+  font-size: medium;
+}
+th {
+  font-size: large;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  padding: 2px;
 }
 }
 @media all and (max-width: 461px) {
-.buttt{
-  margin-left: 1px !important;
+  .buttt {
+    margin-left: 1px !important;
+  }
+}
+@media all and (max-width: 330px) {
+  .download{
+ display: none; 
 }
 }
+
 </style>

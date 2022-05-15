@@ -148,8 +148,8 @@ bottom:50px !important;
       padding: 0px;
 }
 .profile2 {
-  height: 250px;
-  width: 220px;
+  height: 210px;
+  width: 190px;
   border-radius: 20px;
   float: left;
   border: white !important;
@@ -175,5 +175,14 @@ bottom:50px !important;
   transform: scale(1.2); 
   color:rgba(115, 179, 106, 0.966) !important;
   width: 70%;
+}
+@media all and (max-width:768px) {
+  .collapse-icon{
+    display: none;
+  }
+  .footer-copyright{
+    position: fixed !important;
+    bottom: 5;
+  }
 }
 </style>

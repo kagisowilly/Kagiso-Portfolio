@@ -67,11 +67,11 @@ export default {
 /* LOADER */
 .loader {
     z-index: 1000;
-  border: 16px solid #f3f3f3;
+  border: 8px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid rgba(115, 179, 106, 0.966);
-  width: 120px;
-  height: 120px;
+  border-top: 8px solid rgba(115, 179, 106, 0.966);
+  width: 60px;
+  height: 60px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
@@ -160,7 +160,6 @@ ul.timeline > li:before {
     .resu {
       width: 100%;
       border-radius: 15px;
-      box-shadow: rgba(255, 255, 255, 1) 0px 5px 15px;
     }
     
     }
