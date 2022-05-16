@@ -35,25 +35,25 @@ export default {
       </span>
     </div>
 
-    <SidebarLink class="sidebarlink" to="/" icon="fas fa-home">
+    <SidebarLink title="Home" class="sidebarlink" to="/" icon="fas fa-home">
       Home
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/about" icon="fas fa-address-card">
+    <SidebarLink title="About" class="sidebarlink" to="/about" icon="fas fa-address-card">
       About
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/resume" icon="fas fa-list">
+    <SidebarLink title="Resume" class="sidebarlink" to="/resume" icon="fas fa-list">
       Resume
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/skills" icon="fas fa-pen">
+    <SidebarLink title="Skills" class="sidebarlink" to="/skills" icon="fas fa-pen">
       Skills
     </SidebarLink>
-    <SidebarLink class="sidebarlink" to="/projects" icon="fas fa-suitcase">
+    <SidebarLink title="Projects" class="sidebarlink" to="/projects" icon="fas fa-suitcase">
       Projects
     </SidebarLink>
-        <SidebarLink class="sidebarlink" to="/testimonials" icon="fas fa-users">
+        <SidebarLink title="Testimonials" class="sidebarlink" to="/testimonials" icon="fas fa-users">
       Testimonials
     </SidebarLink>
-        <SidebarLink class="sidebarlink" to="/contact" icon="fas fa-comments">
+        <SidebarLink title="Contact" class="sidebarlink" to="/contact" icon="fas fa-comments">
       Contact
     </SidebarLink>
 
