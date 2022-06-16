@@ -3,13 +3,14 @@
 
   <section class="education-work" id="education">
     <h1 class="text-center display-6 green fw-bold subtitlee mb-5">
-      <u>Resume</u>
+      <u>RESUME</u>
     </h1>
     <h3 class="text-center edu-resu pt-5">Education & Experience</h3>
     <div class="container mb-5">
       <div class="row justify-content-center" v-if="resumes">
         <div class="col-lg-10 text-black">
           <ul class="timeline">
+            <!-- LOOPING -->
             <li class="slide" v-for="resume of resumes" :key="resume.title">
               <div class="resu box-shadow">
                 <div class="p-2">
@@ -32,6 +33,7 @@
           </ul>
         </div>
       </div>
+      <!-- LOADER -->
       <div class="loaderr justify-content-center" v-else>
         <div class="loader"></div>
       </div>
@@ -44,7 +46,7 @@ export default {
   data() {
     return { resumes: null }
   },
-
+// FETCHING FROM AN API
   mounted() {
     fetch('https://kagisomphayiportfolio.herokuapp.com/resume')
       .then((res) => res.json())
@@ -115,16 +117,23 @@ template {
     width: 100%;
   }
 }
-/* SLIDE END */
+
+/* BOX */
 .box-shadow {
   box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
   -webkit-box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
   -moz-box-shadow: -11px 11px 13px -8px rgba(95, 225, 124, 0.75);
   border: none;
 }
+.resu {
+  width: 90%;
+  border-radius: 15px;
+}
+/* FONT */
 .green {
   color: rgba(115, 179, 106, 0.966);
 }
+/* TIMELINE */
 ul.timeline {
   list-style-type: none;
   position: relative;
@@ -156,10 +165,7 @@ ul.timeline > li:before {
   height: 20px;
   z-index: 8;
 }
-.resu {
-  width: 90%;
-  border-radius: 15px;
-}
+/* MEDIA QUERIES */
 @media all and (max-width: 991px) {
 }
 @media all and (max-width: 767px) {

@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-center display-6 subtitlee fw-bold"><u>Skills</u></h1>
+  <h1 class="text-center display-6 subtitlee fw-bold"><u>SKILLS</u></h1>
   <section id="skills" style="">
     <div
       class="container skills-content col-lg-6 col-md-8 col-sm-10 col-10 mt-5"

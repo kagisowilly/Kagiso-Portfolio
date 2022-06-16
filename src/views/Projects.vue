@@ -2,8 +2,8 @@
   <!-- projects section -->
   <section id="projects" class="projects">
     <div class="container">
-                <h1 class="text-center display-6 green fw-bold subtitlee">
-          <u>Projects</u>
+        <h1 class="text-center display-6 green fw-bold subtitlee">
+        <u>PROJECTS</u>
         </h1>
         <p class="text-center text-muted mb-5">
           Below are some of the projects I've done

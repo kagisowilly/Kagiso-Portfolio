@@ -1,16 +1,16 @@
 <template>
   <!-- LANDING SECTION -->
   <section class="num-one" id="home">
-    <!-- Landing-->
     <div class="container one">
       <div class="row home-content">
         <div class="col- text-center">
-          <div class="">
-                        <h4
-              style="color:rgba(115, 179, 106, 0.966) "
+          <div class="myname">
+            <h4
+              style="color: rgba(115, 179, 106, 0.966)"
               class="display-1 main-title2 fw-bold"
             >
-              Hi, <span style="color: rgba(255,255,255)">I'm</span>
+              Hi,
+              <span style="color: rgba(255, 255, 255)">I'm</span>
             </h4>
             <h1
               style="color: rgba(115, 179, 106, 0.966)"
@@ -22,12 +22,13 @@
           <div class="col-lg-6 mx-auto">
             <div class="lead text-white">
               <p class="mt-3 text-white">
-                 <span class="typed-text">{{ typeValue }}</span>
+                <span class="typed-text">{{ typeValue }}</span>
                 <span class="cursor" :class="{ typing: typeStatus }">
                   &nbsp;
                 </span>
               </p>
             </div>
+            <!-- ICONS -->
             <div class="d-grid gap-4 d-flex home-icon justify-content-center">
               <a
                 target="_blank"
@@ -121,14 +122,20 @@ export default {
 </script>
 
 <style scoped>
-
-/* END OF ANIMATION */
+/* ICONS */
 .icons {
   font-size: 25px;
 }
-  p {
-    font-size: 30px;
-  }
+.icons:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  color: rgba(115, 179, 106, 0.966) !important;
+}
+/* TEXT */
+p {
+  font-size: 30px;
+}
 
 .main-title {
   font-size: 120px;
@@ -138,27 +145,14 @@ export default {
   font-size: 60px;
   margin-top: 0px !important;
 }
+/* HOME CONTENT POSITIONING */
 .home-content {
   display: flex;
   align-items: center;
   height: 100vh;
   justify-content: center;
 }
-.boot-arrow {
-  font-size: 25px;
-  color: rgba(115, 179, 106, 0.966);
-}
-.boot-arrow:hover {
-  color: black;
-}
-
-.icons:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  color: rgba(115, 179, 106, 0.966) !important;
-}
-
+/* BACKGROUND IMAGE */
 .num-one {
   height: 100vh;
   margin-top: 0;
@@ -175,11 +169,12 @@ export default {
   overflow-y: hidden;
   background-position: 70%;
 }
+/* MEDIA QUERIES */
 @media all and (max-width: 992px) {
   .main-title {
     font-size: 80px !important;
   }
-    .main-title2 {
+  .main-title2 {
     font-size: 50px !important;
   }
   p {
@@ -190,7 +185,7 @@ export default {
   .main-title {
     font-size: 50px !important;
   }
-    .main-title2 {
+  .main-title2 {
     font-size: 50px !important;
   }
   p {
@@ -201,7 +196,7 @@ export default {
   .main-title {
     font-size: 70px !important;
   }
-    .main-title2 {
+  .main-title2 {
     font-size: 35px !important;
   }
   p {
@@ -212,7 +207,7 @@ export default {
   .main-title {
     font-size: 50px !important;
   }
-    .main-title2 {
+  .main-title2 {
     font-size: 35px !important;
   }
   p {
@@ -220,6 +215,7 @@ export default {
   }
 }
 
+/* ANIMATION */
 @keyframes cursorBlink {
   49% {
     background-color: #fff;

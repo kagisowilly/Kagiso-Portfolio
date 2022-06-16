@@ -1,65 +1,90 @@
 <template>
   <section class=" contact-background" id="contact">
     <h2 class="text-center green display-6 fw-bold mb-3 subtitlee">
-      <u>Contact Me</u>
+      <u>CONTACT</u>
     </h2>
-    <p class="text-center">Let's get in touch.</p>
+    <h5 class="text-center span">LET'S GET IN TOUCH</h5>
     <div class="cont slide">
       <div class="formm container justify-content-center">
         <div class="row">
           <div class="col-md-6 sliderrr col-sm-12 col- col-lg-4 col-12">
-            <div class=" ">
-              <label><h5><i class="bi bi-envelope contact-icons"></i>  Email:</h5></label>
-              <p>mphayiw@gmail.com</p>
+            
+            <h5 class="span2">LET'S GET IN TOUCH</h5>
 
-              <label><h5><i class="bi bi-telephone contact-icons"></i>Contact number:</h5></label>
-              <p>(+27)79 928 2407</p>
-              <label> <h5><i class="bi bi-geo-alt contact-icons"></i>Adress:</h5></label>
+            <hr>
+            <div class=" ">
+              <div class="d-flex mt-4">
+              <div >
+              <i class="bi bi-envelope-fill icons"></i>               
+              </div>
+              <div class="mx-md-4 mx-sm-3 mx-1 ">
+              <h6 class="mb-0">EMAIL:</h6>
               <p>
-                Firgrove Rural
-                <br />
+                mphayiw@gmail.com
+              </p>                
+              </div>                
+              </div>
+
+              <div class="d-flex my-4">
+              <div >
+              <i class="bi bi-telephone-fill icons"></i>               
+              </div>
+              <div class="mx-md-4 mx-sm-3 mx-1 ">
+              <h6 class="mb-0">CONTACT NO.</h6>
+              <p>
+               (+27)79 928 2407 
+              </p>                
+              </div>                
+              </div>
+
+              <div class="d-flex">
+              <div >
+              <i class="bi bi-geo-alt-fill icons" ></i>               
+              </div>
+              <div class="mx-md-4 mx-sm-3 mx-1 ">
+              <h6 class="mb-0">ADRESS:</h6>
+              <p>
                 Cape Town, South Africa
-              </p>
+              </p>                
+              </div>                
+              </div>
             </div>
           </div>
-
           <div class=" form-cont  col-md-6 col-sm-12 col- col-lg-8 col-12">
             <form @submit.prevent="handleSubmit" class="contactMe card-shadow slider container">
               <div id="emailHelp" class="form-text text-center">
               </div>
-              <label class="text-black">Name:</label>
               <input
                 class="form-input neu-border-inset"
                 type="text"
                 v-model="name"
                 required
+                placeholder="Name*"
               />
-              <label class="text-black">Email:</label>
               <input
-                class="form-input neu-border-inset"
+                class=" form-input email neu-border-inset"
                 type="email"
                 v-model="email"
                 required
+                placeholder="Email*"
               />
-
-              <label class="text-black">Subject:</label>
               <input
-                class="form-input neu-border-inset"
+                class="form-input neu-border-inset subject"
                 type="text"
                 v-model="subject"
+                placeholder="Subject"
               />
-
-              <label class="text-black">Message:</label>
-              <input
-                class="form-input message-input neu-border-inset"
+              <textarea
+                class=" form-input message-input neu-border-inset"
                 type="text"
                 v-model="message"
                 required
-              />
+                placeholder="Message*"
+              ></textarea>
 
               <div class="submit mb-3">
-                <button type="Submit" class="mb-3 btn button-body">
-                  Submit
+                <button type="Submit" class="mb-3  button-body">
+                  SUBMIT
                 </button>
               </div>
             </form>
@@ -105,18 +130,24 @@ export default {
 </script>
 
 <style scoped>
-.card-shadow {
-  box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
-  -webkit-box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
-  -moz-box-shadow: -11px 11px 13px -8px rgba(95, 225, 124, 0.75);
-  border: none;
+/* ICONS */
+.message-input, .email,.subject {
+  margin-top: 30px;
+}
+.icons {
+  font-size: 30px;
+  color: rgba(115, 179, 106, 0.966) !important;
+
+}
+h5{
+  font-weight: bold;
 }
 .green {
   color: rgba(115, 179, 106, 0.966);
 }
-
-h5 {
+h6 {
   color: rgba(115, 179, 106, 0.966);
+  font-weight: bold;
 }
 .iframe {
   margin-top: 150px;
@@ -135,34 +166,41 @@ label {
   letter-spacing: 1px;
   font-weight: bold;
 }
-input {
+input, textarea{
   display: block;
   padding: 5px 3px;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #ddd;
-  color: rgb(0, 0, 0);
-  background-color: rgba(233, 221, 221, 0.25);
+  color: white;
+  background-color: rgba(115, 179, 106, 0.966) ;
+}
+textarea{
+  height: 10rem;
 }
 .button-body {
   background: rgba(115, 179, 106, 0.966);
   border: 0;
-  padding: 10px 20px;
-  margin-top: 20px;
+  padding: 7px 15px;
+  margin-top: 30px;
   color: rgb(0, 0, 0);
-  border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px !important;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 button:hover {
   opacity: 0.8;
   background: #12613b;
   color: rgb(255, 255, 255) !important;
 }
-.submit {
-  text-align: center;
-}
 
+.span2{
+display: block;
+}
+.span{
+display: none !important;
+}
 .error {
   color: #ff0062;
   margin-top: 10px;
@@ -172,21 +210,21 @@ button:hover {
 .contactMe {
   width: 100%;
   margin: 0px;
+  padding: 0;
 }
 .contact-icons {
   font-size: 20px !important;
 }
 .formm {
   width: 100%;
-  padding-top: 70px;
 }
 .cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center !important;
-  padding-bottom: 40px;
+  align-items: center !important;
+  min-height: 90vh;
 }
-/* SLIDE */
 .slide {
   animation-duration: 1s;
   animation-name: slidein;
@@ -208,14 +246,14 @@ template {
 
 /* SLIDE END */
 @media all and (max-width: 800px) {
-  .formm {
-    width: 100%;
-  }
+
 }
 @media all and (max-width: 768px) {
-  .formm {
-    width: 100%;
-    padding-top: 30px;
-  }
+.span{
+display: block !important;
+}
+.span2{
+display: none;
+}
 }
 </style>

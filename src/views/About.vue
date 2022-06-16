@@ -1,22 +1,24 @@
 <template>
   <section class="about-section" id="about">
     <div class="sec">
+      <!-- SUBTITLE -->
     <div>
       <h1 class="text-center display-6 subtitlee green fw-bold mb-5">
-        <u>About</u>
+        <u>ABOUT</u>
       </h1>
     </div>
     <div class="container pb-3">
       <div class="text-center">
         <h3 class="text-black bolder mb-4 intro">Introduction</h3>
       </div>
+      <!-- ABOUT ME PARAGRAPHS -->
       <div class="row justify-content-center text-black">
         <div
           class="
             col col-lg-10
             text-md-start text-lg-center
             text-start
-            abountcont
+            abount_me
             col-md-10
           "
         >
@@ -36,7 +38,7 @@
           </p>
         </div>
       </div>
-
+<!-- TABLES -->
       <div class="row justify-content-center pt-3">
         <div class="col- col-lg-6 col-md-5">
           <table class="table text-start text-black table-bordered">
@@ -121,6 +123,7 @@
             </tbody>
           </table>
         </div>
+        <!-- BUTTONS -->
         <div class="col- col-lg-6 col-md-5">
           <div class="hr">
             <hr />
@@ -163,18 +166,20 @@ export default {}
 </script>
 
 <style scoped>
-
+/* BACKGROUND */
+template {
+  background-color: #f2f2fc;
+}
+/* BUTTON */
 .submit{
   display: flex;
   gap: 5px;
 }
-hr {
-  color: rgba(115, 179, 106, 0.966);
-  height: 2px;
-  margin-bottom: 0;
-  margin-top: 50px;
+button:hover {
+  opacity: 0.8;
+  background: #12613b;
+  color: rgb(255, 255, 255) !important;
 }
-/* BUTTON */
 .button-body {
   background: rgba(115, 179, 106, 0.966);
   border: 0;
@@ -183,15 +188,24 @@ hr {
   border-radius: 10px;
   cursor: pointer;
 }
-button:hover {
-  opacity: 0.8;
-  background: #12613b;
-  color: rgb(255, 255, 255) !important;
+.buttt {
+  margin-left: 10px;
 }
-
-#sub {
-  color: white;
+/* FONT */
+.green {
+  color: rgba(115, 179, 106, 0.966);
 }
+.abount_me {
+  text-align: center;
+}
+/* HORIZONTAL LINE */
+hr {
+  color: rgba(115, 179, 106, 0.966);
+  height: 2px;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+/* TABLES */
 tbody,
 td,
 tfoot,
@@ -201,15 +215,10 @@ tr {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
-
 }
 .table > :not(:first-child) {
   border-top: 1px solid rgba(115, 179, 106, 0.966);
 }
-.green {
-  color: rgba(115, 179, 106, 0.966);
-}
-
 td,
 tr {
   font-size: large;
@@ -217,20 +226,10 @@ tr {
 th {
   font-size: larger;
 }
-.abountcont {
-  text-align: center;
-}
-.buttt {
-  margin-left: 10px;
-}
-/* SLIDE */
+/* SLIDE ANIMATION */
 .sec {
   animation-duration: 1s;
   animation-name: slidein;
-}
-
-template {
-  background-color: #f2f2fc;
 }
 @keyframes slidein {
   from {
@@ -243,6 +242,7 @@ template {
     width: 100%;
   }
 }
+/* MEDIA QUERIES */
 @media all and (max-width: 991px) {
   .buttt {
     margin-left: 0;
