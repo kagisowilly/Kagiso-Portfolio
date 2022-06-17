@@ -5,7 +5,7 @@
     <h1 class="text-center display-6 green fw-bold subtitlee ">
       <u>RESUME</u>
     </h1>
-    <h4 class="text-center edu-resu mb-5 ">EDUCATION | EXPRERIENCE</h4>
+    <h5 class="text-center edu-resu mb-5 ">EDUCATION | EXPRERIENCE</h5>
     <div class="container mb-5">
       <div class="row justify-content-center" v-if="resumes">
         <div class="col-lg-10 text-black">
@@ -14,10 +14,10 @@
             <li class="slide" v-for="resume of resumes" :key="resume.title">
               <div class="resu box-shadow">
                 <div class="p-2">
-                  <h3 class="green title">
+                  <h5 class="green title">
                     <i class="bi bi-calendar-fill"></i>
                     {{ resume.title }}
-                  </h3>
+                  </h5>
                   <div style="margin-left: 30px">
                     <h6 class="text-muted period">{{ resume.period }}</h6>
                     <h6>{{ resume.institution }}</h6>
@@ -28,7 +28,6 @@
                 </div>
               </div>
             </li>
-
             <br />
           </ul>
         </div>

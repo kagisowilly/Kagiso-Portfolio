@@ -9,7 +9,7 @@
     </div>
     <div class="container pb-3">
       <div class="text-center">
-        <h3 class="text-black bolder mb-4 intro">Introduction</h3>
+        <h5 class="text-black mb-3 intro">INTRODUCTION</h5>
       </div>
       <!-- ABOUT ME PARAGRAPHS -->
       <div class="row justify-content-center text-black">
@@ -179,6 +179,9 @@ button:hover {
   opacity: 0.8;
   background: #12613b;
   color: rgb(255, 255, 255) !important;
+}
+.intro{
+  font-weight: bold;
 }
 .button-body {
   background: rgba(115, 179, 106, 0.966);
