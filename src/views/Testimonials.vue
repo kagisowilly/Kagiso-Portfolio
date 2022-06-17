@@ -4,7 +4,8 @@
     <h1 class="text-center display-6 mb-5 green fw-bold subtitlee">
       <u>TESTIMONIALS</u>
     </h1>
-    <div v-if="testimonials" class="container loop">
+    <div v-if="testimonials" class="d-flex main-div align-items-center">
+    <div  class="container loop">
       <div
         id="carouselExampleControlsNoTouching"
         class="carousel testi slide text-black col-lg-10"
@@ -61,7 +62,9 @@
           </button>
         </div>
       </div>
+    </div>      
     </div>
+
     <div class="loaderr justify-content-center" v-else>
       <div class="loader"></div>
     </div>
@@ -103,6 +106,9 @@ export default {
 </script>
 
 <style scoped>
+.main-div{
+  height: 85vh;
+}
 .card-shadow {
   box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
   -webkit-box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);

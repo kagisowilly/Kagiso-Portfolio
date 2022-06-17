@@ -252,8 +252,9 @@ template {
 .span{
 display: block !important;
 }
-.span2{
+.span2, hr{
 display: none;
 }
+
 }
 </style>

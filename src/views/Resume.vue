@@ -2,10 +2,10 @@
   <!-- RESUME -->
 
   <section class="education-work" id="education">
-    <h1 class="text-center display-6 green fw-bold subtitlee mb-5">
+    <h1 class="text-center display-6 green fw-bold subtitlee ">
       <u>RESUME</u>
     </h1>
-    <h3 class="text-center edu-resu pt-5">Education & Experience</h3>
+    <h4 class="text-center edu-resu mb-5 ">EDUCATION | EXPRERIENCE</h4>
     <div class="container mb-5">
       <div class="row justify-content-center" v-if="resumes">
         <div class="col-lg-10 text-black">
@@ -20,7 +20,7 @@
                   </h3>
                   <div style="margin-left: 30px">
                     <h6 class="text-muted period">{{ resume.period }}</h6>
-                    <h5>{{ resume.institution }}</h5>
+                    <h6>{{ resume.institution }}</h6>
                     <p class="description">
                       {{ resume.description }}
                     </p>
@@ -60,8 +60,11 @@ export default {
 
 <style scoped>
 /* LOADER */
-  h5{
+  h6{
         font-weight: 600;
+  }
+  .edu-resu{
+font-weight: bold;
   }
 .loader {
   z-index: 1000;
@@ -172,7 +175,7 @@ ul.timeline > li:before {
 }
 @media all and (max-width: 576px) {
   .edu-resu{
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 10px !important ;
   }
   .title{

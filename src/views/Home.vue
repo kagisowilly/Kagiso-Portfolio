@@ -58,11 +58,8 @@
     </div>
     <div class="text-center"></div>
   </section>
-</template>
-
-                <span>| Junior Full Stack Developer|</span>
-                <span> Designer |</span>
-                <span>  |</span>
+</template> 
+|
 
 <script>
 import { setTimeout } from 'timers'
