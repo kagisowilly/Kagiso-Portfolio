@@ -171,9 +171,10 @@ input, textarea{
   padding: 5px 3px;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: none;
   color: white;
   background-color: rgba(115, 179, 106, 0.966) ;
+  outline: none !important;
 }
 textarea{
   height: 10rem;
