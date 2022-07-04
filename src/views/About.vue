@@ -132,7 +132,7 @@
             <a
               target="_blank"
               download
-              href="https://drive.google.com/file/d/1aSv-Dk5IbK6hST_61KchliLa1LetfWdS/view?usp=drivesdk"
+              href="https://drive.google.com/u/0/uc?id=1UDy72Sh_qZ-l5TbYVWDQupfgHcpej3Vu&export=download"
               class="text-white"
             >
               <button type="Submit" class="mb-3 btn button-body">
