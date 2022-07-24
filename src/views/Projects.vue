@@ -26,7 +26,7 @@
                 <div class="menu-overlay">
                   <div class="menu-overlay-content">
                     <div>
-                      <h3 class="green mb-1">{{ project.title }}</h3>
+                      <h6 class=" green mb-1">{{ project.title }}</h6>
                     </div>
                     <span class="text-white">{{ project.description }}</span>
 
@@ -257,7 +257,7 @@ button {
   margin-bottom: 0;
   margin-bottom: -6px;
 }
-.menu-overlay-content h5 {
+.menu-overlay-content {
   text-transform: uppercase;
   color: var(--grey);
   margin-top: 0.6rem;

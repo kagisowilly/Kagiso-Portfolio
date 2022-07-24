@@ -22,8 +22,8 @@
           <div class="col-lg-6 mx-auto">
             <div class="lead text-white">
               <p class="mt-3 text-white">
-                <span class="typed-text">{{ typeValue }}</span>
-                <span class="cursor" :class="{ typing: typeStatus }">
+                <span class="text-white typed-text">{{ typeValue }}</span>
+                <span class="cursor text-white" :class="{ typing: typeStatus }">
                   &nbsp;
                 </span>
               </p>
