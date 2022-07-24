@@ -27,7 +27,7 @@
                     <div>
                       <h6 class=" green mb-1">{{ project.title }}</h6>
                     </div>
-                    <span class="text-white">{{ project.description }}</span>
+                    <span class="text-white span">{{ project.description }}</span>
 
                     <div class="card-icons">
                       <a

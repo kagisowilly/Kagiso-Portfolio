@@ -24,7 +24,7 @@ export default {
   color: #2c3e50;
   
 }
-p, span, td{
+p, .span, td{
   font-size: .9em;
   font-weight: bolder;
   color: #474747;

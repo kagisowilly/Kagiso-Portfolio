@@ -51,7 +51,7 @@
               <tr>
                 <td>
                   <b class="text-muted">Full name:</b>
-                  <span class="green">Kagiso Mphayi</span>
+                  <span class="span green">Kagiso Mphayi</span>
                 </td>
               </tr>
               <tr>
@@ -136,14 +136,14 @@
               class="text-white"
             >
               <button type="Submit" class="mb-3 btn button-body">
-               <span class="download">Download</span> <span>CV<i class="bi bi-download"></i></span> 
+               <span class="download span">Download</span> <span class="span">CV<i class="bi bi-download"></i></span> 
                 
               </button>
             </a>
             <a href="">
               <router-link to="/projects">
                 <button type="Submit" class="mb-3 buttt btn button-body">
-                 <span> My Work
+                 <span class="span"> My Work
                   <i class="bi mx-1 bi-briefcase"></i></span>
                 </button>
               </router-link>

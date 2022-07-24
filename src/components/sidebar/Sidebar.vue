@@ -78,6 +78,8 @@ export default {
   </div>
 </template>
 
+
+
 <style>
 .sidebarlink.active {
   color: rgba(115, 179, 106, 0.966);
@@ -122,12 +124,15 @@ bottom:50px !important;
   flex-direction: column;
 }
 
+
 .sidebar h1 {
   height: 2.5em;
 }
 
 .sidebarlink {
   margin-top: 25px;
+    font-size: .9em !important;
+  font-weight: bolder !important;
 }
 .collapse-icon {
   position: absolute;
