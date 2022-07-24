@@ -16,8 +16,7 @@
               v-for="project of projects"
               :key="project.title"
             >
-              <!-- item -->
-
+              <!-- items -->
               <div class="card-shadow menu-item">
                 <div class="image-div">
                   <img class="imaage" :src="project.img" alt="food image" />
