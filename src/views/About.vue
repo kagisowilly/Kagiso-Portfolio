@@ -3,7 +3,7 @@
     <div class="sec">
       <!-- SUBTITLE -->
     <div>
-      <h1 class="text-center display-6 subtitlee green fw-bold mb-5">
+      <h1 class="text-center display-6 subtitlee fw-bold mb-5">
         <u>ABOUT</u>
       </h1>
     </div>
@@ -136,15 +136,15 @@
               class="text-white"
             >
               <button type="Submit" class="mb-3 btn button-body">
-               <span class="download">Download</span>  CV
-                <i class="bi bi-download"></i>
+               <span class="download">Download</span> <span>CV<i class="bi bi-download"></i></span> 
+                
               </button>
             </a>
             <a href="">
               <router-link to="/projects">
                 <button type="Submit" class="mb-3 buttt btn button-body">
-                  My Work
-                  <i class="bi mx-1 bi-briefcase"></i>
+                 <span> My Work
+                  <i class="bi mx-1 bi-briefcase"></i></span>
                 </button>
               </router-link>
             </a>
@@ -196,7 +196,7 @@ button:hover {
 }
 /* FONT */
 .green {
-  color: rgba(115, 179, 106, 0.966);
+  color: #12613b;
 }
 .abount_me {
   text-align: center;

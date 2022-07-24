@@ -2,7 +2,7 @@
   <!-- RESUME -->
 
   <section class="education-work" id="education">
-    <h1 class="text-center display-6 green fw-bold subtitlee ">
+    <h1 class="text-center display-6 fw-bold subtitlee ">
       <u>RESUME</u>
     </h1>
     <h5 class="text-center edu-resu mb-5 ">EDUCATION | EXPRERIENCE</h5>
@@ -134,6 +134,8 @@ template {
 /* FONT */
 .green {
   color: rgba(115, 179, 106, 0.966);
+  font-size: 1em;
+  font-weight: bolder;
 }
 /* TIMELINE */
 ul.timeline {

@@ -1,9 +1,10 @@
 <template>
   <!-- Testimonials -->
   <section class="testimonial-background" id="testimonials">
-    <h1 class="text-center display-6 mb-5 green fw-bold subtitlee">
+    <h1 class="text-center display-6 mb-5 fw-bold subtitlee">
       <u>TESTIMONIALS</u>
     </h1>
+    <p class="container">Hear what my colleagues have to say about me.</p>
     <div v-if="testimonials" class="d-flex main-div align-items-center">
     <div  class="container loop">
       <div
@@ -114,9 +115,6 @@ export default {
   -webkit-box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
   -moz-box-shadow: -11px 11px 13px -8px rgba(95, 225, 124, 0.75);
   border: none;
-}
-.green {
-  color: rgba(115, 179, 106, 0.966);
 }
 /* SLIDE */
 .slider {

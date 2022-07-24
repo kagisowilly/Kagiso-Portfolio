@@ -24,7 +24,11 @@ export default {
   color: #2c3e50;
   
 }
-
+p, span, td{
+  font-size: .9em;
+  font-weight: bolder;
+  color: #474747;
+}
 #nav {
   padding: 30px;
 }
@@ -40,5 +44,8 @@ export default {
 section{
     overflow-x: hidden !important;
     overflow-y: hidden !important;
+}
+.subtitlee {
+  color: #12613b;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class=" contact-background" id="contact">
-    <h2 class="text-center green display-6 fw-bold mb-3 subtitlee">
+    <h2 class="text-center display-6 fw-bold mb-3 subtitlee">
       <u>CONTACT</u>
     </h2>
     <h5 class="text-center span">LET'S GET IN TOUCH</h5>
@@ -142,9 +142,7 @@ export default {
 h5{
   font-weight: bold;
 }
-.green {
-  color: rgba(115, 179, 106, 0.966);
-}
+
 h6 {
   color: rgba(115, 179, 106, 0.966);
   font-weight: bold;

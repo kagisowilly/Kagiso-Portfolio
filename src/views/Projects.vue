@@ -2,67 +2,73 @@
   <!-- projects section -->
   <section id="projects" class="projects">
     <div class="container">
-        <h1 class="text-center display-6 green fw-bold subtitlee">
+      <h1 class="text-center display-6 fw-bold subtitlee">
         <u>PROJECTS</u>
-        </h1>
-        <p class="text-center text-muted mb-5">
-          Below are some of the projects I've done
-        </p>
+      </h1>
+      <p class="text-center text-muted mb-5">
+        Below are some of the projects I've done.
+      </p>
       <div v-if="projects" class="pb-5 justify-content-center">
-
-        <div  class="slide">
+        <div class="slide">
           <div class="row col-lg-12 proji" style="row-gap: 30px">
-    <div class="col-lg-3 col-md-6   col-sm-12" v-for="project of projects" :key="project.title">
-      <!-- item -->
-                
-              <div class = "card-shadow menu-item">
-          <div class="image-div">
-            <img class="imaage" :src ="project.img" alt = "food image">
-          </div>
-            
-            <div class = "menu-overlay">
-              <div class = "menu-overlay-content">
-                <div>
-                  <h2>{{project.title}}</h2>
-                  
-            
-                </div>
-                <h5>{{project.description}}</h5>
-                  
-              <div class="card-icons">     
-                  <a target="_blank" :href="project.netlify" class="card-link">
-                    <button class="mt-0 rounded">
-                      <img
-                        class="icon"
-                        src="@/assets/netlify.png"
-                        alt="Netlify"
-                      />
-                    </button>
-                  </a>
-                  <a target="_blank" :href="project.github" class="card-link">
-                    <button class="mt-0 rounded">
-                      <img
-                        class="icon"
-                        src="@/assets/githubicon.png"
-                        alt="Github"
-                      />
-                    </button>
-                  </a>
-              </div>
-           
+            <div
+              class="col-lg-3 col-md-6 col-sm-12"
+              v-for="project of projects"
+              :key="project.title"
+            >
+              <!-- item -->
 
+              <div class="card-shadow menu-item">
+                <div class="image-div">
+                  <img class="imaage" :src="project.img" alt="food image" />
+                </div>
+
+                <div class="menu-overlay">
+                  <div class="menu-overlay-content">
+                    <div>
+                      <h3 class="green mb-1">{{ project.title }}</h3>
+                    </div>
+                    <span class="text-white">{{ project.description }}</span>
+
+                    <div class="card-icons">
+                      <a
+                        target="_blank"
+                        :href="project.netlify"
+                        class="card-link"
+                      >
+                        <button class="mt-0 rounded">
+                          <img
+                            class="icon"
+                            src="@/assets/netlify.png"
+                            alt="Netlify"
+                          />
+                        </button>
+                      </a>
+                      <a
+                        target="_blank"
+                        :href="project.github"
+                        class="card-link"
+                      >
+                        <button class="mt-0 rounded">
+                          <img
+                            class="icon"
+                            src="@/assets/githubicon.png"
+                            alt="Github"
+                          />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- </a> -->
               </div>
             </div>
-          <!-- </a> -->
-        </div>
-    </div>
           </div>
         </div>
-
       </div>
-              <div class="loaderr justify-content-center" v-else>
-          <div class="loader"></div>
-        </div>
+      <div class="loaderr justify-content-center" v-else>
+        <div class="loader"></div>
+      </div>
     </div>
   </section>
 </template>
@@ -148,6 +154,7 @@ template {
 /* SLIDE END */
 .green {
   color: rgba(115, 179, 106, 0.966);
+  font-weight: bolder;
 }
 .card-shadow {
   box-shadow: -11px 11px 13px -8px rgba(115, 179, 106, 0.966);
@@ -185,14 +192,14 @@ button {
 }
 
 /* SEKO CSS */
- .image-div{
-   width:100%;
- }
-.imaage{
+.image-div {
+  width: 100%;
+}
+.imaage {
   height: 310px;
   object-fit: cover;
-  overflow:hidden;
-  width:100%;
+  overflow: hidden;
+  width: 100%;
 }
 .first-menu {
   display: flex;
@@ -204,70 +211,71 @@ button {
   margin: 5px;
   gap: 10px;
 }
-.title{
-    padding: 0.2rem;
+.title {
+  padding: 0.2rem;
 }
-.menu-wrapper{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.menu-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.menu-item{
-    position: relative;
-    cursor: pointer;
+.menu-item {
+  position: relative;
+  cursor: pointer;
 }
-.menu-overlay{
-    height: 130px;
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    padding: 1.5rem;
-    opacity: 0;
-    transition: var(--transition);
-    overflow: hidden;
+.menu-overlay {
+  height: 60%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: var(--transition);
+  overflow: hidden;
 }
-.menu-overlay-content{
-    overflow: hidden;
-    transition: all 0.5s ease;
-    transform: translateY(100%);
-    text-size-adjust: 40px;
+.menu-overlay-content {
+  overflow: hidden;
+  transition: all 0.5s ease;
+  transform: translateY(100%);
+  text-size-adjust: 40px;
+  position: absolute;
+  bottom: 0;
 }
-.menu-overlay-content div{
-    display: flex;
-    justify-content: space-between;
+.menu-overlay-content div {
+  display: flex;
+  justify-content: space-between;
 }
-.edit-btn{
-   display: inline-block;
-   justify-content: space-around;
+.edit-btn {
+  display: inline-block;
+  justify-content: space-around;
 }
-.menu-overlay-content h2{
-    text-transform: capitalize;
-    margin-bottom: 0;
-    font-size: medium;
-    margin-bottom: -6px;
+.menu-overlay-content h2 {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  margin-bottom: -6px;
 }
-.menu-overlay-content h5{
-    text-transform: uppercase;
-    color: var(--grey);
-    margin-top: 0.6rem;
-    font-size: 0.8rem;
-    font-size: x-small;
-    margin-bottom: 0px;
+.menu-overlay-content h5 {
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  font-size: x-small;
+  margin-bottom: 0px;
 }
-.menu-item:hover .menu-overlay{
-    opacity: 1;
+.menu-item:hover .menu-overlay {
+  opacity: 1;
 }
-.menu-item:hover .menu-overlay-content{
-    transform: translateY(0);
+.menu-item:hover .menu-overlay-content {
+  transform: translateY(0);
 }
-.border{
+.border {
   width: 100%;
   align-items: center;
   text-align: center;
   border-bottom: 4px solid var(--grey);
-  
 }
+
 </style>
