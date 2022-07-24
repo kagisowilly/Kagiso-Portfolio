@@ -2,11 +2,11 @@
   <h1 class="text-center display-6 subtitlee fw-bold"><u>SKILLS</u></h1>
   <section id="skill" >
     <p class="container text-muted text-center">Check ourt some  some of the skills I've acquired thus far.</p>
-    <div class="skills-page">
+    <div class="skills-page slide">
     <div
-      class="container skills-content mt-5"
+      class="container  skills-content mt-5"
     >
-    <div class="row skills-div text-center">
+    <div class="row skills-div  text-center">
       <div class="icon-div col-lg-2 col-md-3 col-sm-3 col-3"><i class="devicon devicon-html5-plain-wordmark"></i></div>
       <div class="icon-div col-lg-2 col-md-3 col-sm-3 col-3"><i class="devicon devicon-css3-plain-wordmark"></i></div>
       <div class="icon-div col-lg-2 col-md-3 col-sm-3 col-3"><i class="devicon devicon-javascript-plain"></i></div>
@@ -64,7 +64,7 @@ padding: 0 !important;
 }
 /* SLIDE */
 .slide {
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein;
 }
 template {
@@ -72,12 +72,13 @@ template {
 }
 @keyframes slidein {
   from {
-    margin-left: 0%;
-    width: 0%;
+    margin-left: 100%;
+    width: 100%;
   }
+
   to {
-    margin-right: 0%;
-    max-width: 100%;
+    margin-left: 0%;
+    width: 100%;
   }
 }
 /* SLIDE END */

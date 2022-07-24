@@ -4,7 +4,7 @@
     <h1 class="text-center display-6 mb-5 fw-bold subtitlee">
       <u>TESTIMONIALS</u>
     </h1>
-    <p class="container">Hear what my colleagues have to say about me.</p>
+    <p class="containe text-center">Hear what my colleagues have to say about me.</p>
     <div v-if="testimonials" class="d-flex main-div align-items-center">
     <div  class="container loop">
       <div
