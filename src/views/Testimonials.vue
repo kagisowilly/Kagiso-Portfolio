@@ -96,7 +96,7 @@ export default {
   },
 
   mounted() {
-    fetch('https://kagisomphayiportfolio.herokuapp.com/testimonials')
+    fetch('https://kagisoportfolio.onrender.com/testimonials')
       .then((res) => res.json())
       .then((data) => {
         console.log(data)

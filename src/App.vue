@@ -10,9 +10,26 @@ export default {
 </script>
 <template>
   <Sidebar />
+
+
+
   <div :style="{ 'margin-left': sidebarWidth }">
     <router-view />
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header p-0">
+        <h5 class="modal-title m-auto" id="exampleModalLabel">Profile Picture</h5>
+      </div>
+      <div class="modal-body  m-0 p-0">
+      <img class="sideBarImage" src="@/assets/profile-min.jpg" alt="Nav-bar-image">
+      </div>
+    </div>
   </div>
+</div>
+  </div>
+
 </template>
 
 <style>
@@ -47,5 +64,20 @@ section{
 }
 .subtitlee {
   color: #12613b;
+}
+/* MODAL */
+.sideBarImage{
+  width: 100%;
+  border-bottom-right-radius:20px ;
+  border-bottom-left-radius:20px ;
+}
+.modal-content{
+  width: auto;
+  border-radius: 20px;
+}
+@media all and(max-width:500px){
+  .sideBarImage{
+  width: 80%;
+}
 }
 </style>

@@ -3,6 +3,7 @@
     <div class="sec">
       <!-- SUBTITLE -->
     <div>
+
       <h1 class="text-center display-6 subtitlee fw-bold mb-5">
         <u>ABOUT</u>
       </h1>
@@ -23,7 +24,7 @@
           "
         >
           <p>
-            I am a hard-working individual who never shies away from a
+            I am a hard-working junior web developer who never shies away from a
             challenge. I am always willing to help the person next to me.
             Furthermore, I am a good communicator, and this is one of the
             reasons why I work well with people. I am always eager to expand my

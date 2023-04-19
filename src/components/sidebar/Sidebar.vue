@@ -14,8 +14,7 @@ export default {
 
 <template>
   <div class="sidebar " :style="{ width: sidebarWidth }">
-    <div>
-      <span  v-if="collapsed">
+    <div class="nav-image" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <div class="col col-lg-10 abountcont col-md-10">
           <img
             src="@/assets/profile-min.jpg"
@@ -23,17 +22,10 @@ export default {
             class="img-responsive profile1"
           />
         </div>
-      </span>
-      <span v-else>
-        <div class="col col-lg-10 abountcont col-md-10">
-          <img
-            src="@/assets/profile-min.jpg"
-            alt="profile"
-            class="img-responsive  profile2"
-          />
-        </div>
-      </span>
     </div>
+            <!-- Button trigger modal -->
+
+
 
     <SidebarLink title="Home" class="sidebarlink" to="/" icon="fas fa-home">
       Home
@@ -57,28 +49,11 @@ export default {
       Contact
     </SidebarLink>
 
-    <span
-      class="collapse-icon "
-      :class="{ 'rotate-180': collapsed }"
-      @click="toggleSidebar"
-    >
-      <i class="fas  fa-angle-double-left" />
-    </span>
-    <span v-if="collapsed">
         <div class="footer-copyright copy1 text-center mb-0 py-1 text-white">
           ©2022:KM
         </div>      
-    </span>
-    <span v-else>
-        <div class="footer-copyright copy2 text-center mb-0 py-1 text-white">
-          ©2022 Copyright: Kagiso Mphayi
-        </div>         
-    </span>
-
   </div>
 </template>
-
-
 
 <style>
 .sidebarlink.active {
@@ -166,6 +141,9 @@ bottom:50px !important;
   border-radius: 20px;
   float: left;
   border: white !important;
+}
+.nav-image{
+  cursor: pointer;
 }
 .sidebarlink:hover{
   -ms-transform: scale(1.2);

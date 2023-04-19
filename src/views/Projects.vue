@@ -6,7 +6,7 @@
         <u>PROJECTS</u>
       </h1>
       <p class="text-center text-muted mb-5">
-        Below are some of the projects I've done.
+        Below are some of my personal projects.
       </p>
       <div v-if="projects" class="pb-5 justify-content-center">
         <div class="slide">
@@ -80,7 +80,7 @@ export default {
     }
   },
   mounted() {
-    fetch('https://kagisomphayiportfolio.herokuapp.com/projects')
+    fetch('https://kagisoportfolio.onrender.com/projects')
       .then((res) => res.json())
       .then((data) => {
         console.log(data)

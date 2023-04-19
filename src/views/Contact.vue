@@ -107,7 +107,7 @@ export default {
   },
   methods: {
     handleSubmit() {
-      fetch('https://laundry-villa.herokuapp.com/contact', {
+      fetch('https://kagisoportfolio.onrender.com/contact', {
         method: 'POST',
         body: JSON.stringify({
           name: this.name,
