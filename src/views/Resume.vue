@@ -47,7 +47,7 @@ export default {
   },
 // FETCHING FROM AN API
   mounted() {
-    fetch('https://kagisoportfolio.onrender.com/resume')
+    fetch('https://kagisoportfolio.onrender.com/resume',{mode: 'no-cors'})
       .then((res) => res.json())
       .then((data) => {
         console.log(data)

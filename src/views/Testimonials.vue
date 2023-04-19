@@ -96,7 +96,7 @@ export default {
   },
 
   mounted() {
-    fetch('https://kagisoportfolio.onrender.com/testimonials')
+    fetch('https://kagisoportfolio.onrender.com/testimonials',{mode: 'no-cors'})
       .then((res) => res.json())
       .then((data) => {
         console.log(data)
