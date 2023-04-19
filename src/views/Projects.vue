@@ -80,7 +80,7 @@ export default {
     }
   },
   mounted() {
-    fetch('https://kagisoportfolio.onrender.com/projects',{mode: 'no-cors'})
+    fetch('https://kagisoportfolio.onrender.com/projects',{mode: 'cors'})
       .then((res) => res.json())
       .then((data) => {
         console.log(data)
