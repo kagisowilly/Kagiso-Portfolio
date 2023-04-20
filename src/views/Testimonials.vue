@@ -77,7 +77,52 @@ export default {
   data() {
     return {
       isActive: 0,
-      testimonials: null
+      testimonials: [
+  {
+    id:1,
+    name: "Godwin Dzvapatsva",
+    image: `https://i.postimg.cc/sxwJ0ncd/Godwin.jpg`,
+    role: `Head Of Curriculum And Learning | Lifechoices Coding Acardemy`,
+    description: `Kagiso is a diligent student who thrives to do the best and is always time concious.I recommend him.`,
+  },
+  {
+    id: 2,
+    name: "Azabenathi Pupuma",
+    image: "https://i.postimg.cc/289wQKyn/Aza-min.jpg",
+    role: `Web developer`,
+    description: `Kagiso is one of the hard workers you could come across. He always ensure that he gets the hang of his work and he does not stop until he finishes. He is goal oriented.`,
+  },
+  {
+    id: 3,
+    name: "Jason Wandrag",
+    image: `https://i.postimg.cc/4y2q3kzX/jason.jpg`,
+    role: "Lecturer | Lifechoices Coding Academy",
+
+    description: `Kagiso has a sharp mind and keen intellect. He is both a hard worker and considerate colleague. Kagiso also displays a calm nature, and he is not easily disturbed. He has the making to become an incredible developer, and I wish him all the best for his career.`,
+  },
+  {
+    id:4,
+    name: "Nomzuyiseko Mpofu",
+    image: `https://i.postimg.cc/43kpwkgH/nomv-min.jpg`,
+    role: " Web designer",
+
+    description: `Kagiso is a person of humble character easy to work with and so far he shown dedication and great work ethic.I admire his time management.`,
+  },
+  {
+    id:5,
+    name: "Joel Tshimanga Mukanya",
+    image: `https://i.postimg.cc/bv9ZSWfQ/Joel.jpg`,
+    role: "Lecturer | Lifechoices Coding Academy",
+    description: `Kagiso Mphayi is a very talented individual with a determination and has shown great qualities in the time we have worked together. He assisted in the classroom and was a great asset to have in addition is very hardworking and always assisting those in need.`,
+  },
+  {
+    id:6,
+    name: "Ashley Kannermeyer",
+    image: `https://i.postimg.cc/fyQYzjZR/Ash.jpg`,
+    role: "Web developer",
+    description: `Kagiso is a very hard worker and always eager to help.`,
+  },
+]
     }
   },
   methods: {
@@ -95,14 +140,14 @@ export default {
     }
   },
 
-  mounted() {
-    fetch('https://kagisoportfolio.onrender.com/testimonials',{mode: 'cors'})
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data)
-        this.testimonials = data
-      })
-  }
+  // mounted() {
+  //   fetch('https://kagisoportfolio.onrender.com/testimonials',{mode: 'cors'})
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data)
+  //       this.testimonials = data
+  //     })
+  // }
 }
 </script>
 
