@@ -43,101 +43,17 @@
 <script>
 export default {
   data() {
-    return { resumes: [
-    {
-      id: 1,
-      title: "JUNIOR WEB DEVELOPER",
-      period: "October(2022) - Present(2023)",
-      description: ``,
-      institution: "CIMSO",
-    },
-    {
-      id: 2,
-      title: "JUNIOR WEB DEVELOPER",
-      period: "August(2022) - September(2022)",
-      description: `Before the company got restructured and our department getting dissolved, I worked as a junior web developer,
-       a support to the senior developer. Some of my roles included Strategizing with the design team about all online user experience, from
-       conceptualizing, site mapping, wire-framing and implementing, WordPress development, migrating websites to new servers, Website maintenance- maintaining our sites each month with software
-       updates.`,
-      institution: "Dlonra Pty",
-    },
-    {
-    id: 3,
-    title: "ASSISTANT LECTURER",
-    period: "April(2022) - July(2022)",
-    description: `The role included 
-    clarifying the course content (JavaScript, Bootstrap, HTML, CSS, Vue.js, Node.js(express), MongoDB, and MySQL.) to the students individually or in groups,
-     supporting the lecturing team with technical requirements on a day-to-day
-    basis,
-    giving feedback on any challenges that might arise on a daily basis with
-students to leadership and facilitators,
-assisting in identifying potential opportunities for improvements within the
-curriculum and overall implementation of the coding program,
-assisting with marking of modules and tasks and assisting with managing and updating the student portal when needed.
-    `,
-    institution: "LifeChoices Coding Academy",
-  },
-    {
-      id: 4,
-      title: "WEB DEVELOPMENT",
-      period: "September(2021) - March(2022)",
-      description: `Life Choices is a year-long bootcamp where we learn more about Web development and its fundamentals. We also get the oppotunity to learn interpersonal skills.`,
-
-      institution: "LifeChoices Coding Academy",  
-    },
-
-    {
-      id: 5,
-      title: "CUSTOMER SERVICE",
-      description: `I was offered the opportunity to learn the importance of strong and consistent communication; how to handle difficult customers; how to handle complaints; and the value of loyalty in the work place.`,
-      institution: "eLearning College",
-      period: "August(2021)",
-    },
-    {
-
-      id: 6,
-      title: "PRIVATE TUTORING|SELF-LEARNING",
-      description: `Throughout the year, I tutored the grade 12 learners from my area maths and physics, and I also used the time in between to
-                    teach myself HTML and CSS with the clear help
-                    of online resources.`,
-      institution: "",
-      period: "February 2020 - November 2020",
-    },
-    {
-      id: 7,
-      title: "ASSISTING FIRST-YEAR STUDENTS",
-      description: `I was assisting first-year Students at the University Of Pretoria with online registration and using peripheral equipment.`,
-      institution: "",
-      period: "January-February(2018) & January-February(2019)",
-    }
-    ,
-    {
-      id: 8,
-      title: "PRIVATE TUTORING",
-      description: `During this period I was tutoring some of the grade 12
-                  learners from my area maths and physics. The experience
-                  helped me a lot with improving my communication skills.`,
-      institution: "",    
-      period: "February 2015 - November 2015",
-    },
-    {
-      id: 9,
-      title: "NATIONAL SENIOR CERTIFICATE",
-      description: `During my time at this institution I improved my social skills, and worked more on my time management.`,
-      institution: "Mmametlhake High School", 
-      period: "January 2012 - December 2014",
-    }
-  ]}
+    return { resumes: null }
   },
 // FETCHING FROM AN API
-  // mounted() {
-  //   fetch('https://kagisoportfolio.onrender.com/resume',{mode: 'cors'})
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data)
-  //       this.resumes = data
-  //     })
-  // }
+  mounted() {
+    fetch('https://kagisoportfolio.onrender.com/resume',{mode: 'cors'})
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        this.resumes = data
+      })
+  }
 }
 </script>
 
